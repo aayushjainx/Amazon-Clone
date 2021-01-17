@@ -31,6 +31,8 @@ function Payment() {
   const stripe = useStripe();
   const elements = useElements();
 
+  console.log('The Secret is >>', clientSecret);
+
   const handleSubmit = async (event) => {
     event.preventDefault();
     setProcessing(true);
@@ -44,6 +46,9 @@ function Payment() {
         setSucceeded(true);
         setError(null);
         setProcessing(false);
+        dispatch({
+          type: 'EMPTY_BASKET',
+        });
         history.replace('/orders');
       });
   };
