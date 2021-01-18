@@ -44,6 +44,7 @@ function App() {
             <Login />
           </Route>
           <Route path='/orders'>
+            <Header />
             <Orders />
           </Route>
           <Route path='/checkout'>
