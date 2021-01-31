@@ -1,6 +1,6 @@
 # DEPLOYED LINK
 
-[Netflic-clone](https://amazo-nclone7.web.app/)
+[Amazon-clone](https://amazo-nclone7.web.app/)
 
 # Getting Started with Create React App
 
