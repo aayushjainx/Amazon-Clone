@@ -10,6 +10,11 @@
   min-width: 100px;
   background-color: white;
   z-index: 1;
+  transition: transform 450ms;
+}
+
+.product:hover {
+  transform: scale(1.04);
 }
 
 .product > img {
@@ -38,4 +43,29 @@
   margin-top: 10px;
   border-color: #a88734 #9c7e31 #846a29;
   color: #111;
+}
+
+.toastProduct {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.toastProduct__info {
+  padding-left: 10px;
+}
+
+.toastProduct__image {
+  object-fit: contain;
+  width: 50px;
+  height: 50px;
+}
+
+.toastProduct__title {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.toastProduct__price {
+  margin-top: 3px;
 }
